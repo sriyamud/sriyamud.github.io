@@ -30,6 +30,9 @@ nav{position:sticky;top:0;z-index:100;background:rgba(245,244,240,.92);backdrop-
 .masonry{max-width:1200px;margin:0 auto;padding:0 24px 60px;columns:3;column-gap:20px}
 .card{break-inside:avoid;margin-bottom:20px;background:var(--card);border-radius:var(--r);box-shadow:var(--sh);overflow:hidden;transition:box-shadow .3s,transform .25s}
 .card:hover{box-shadow:var(--sh2);transform:translateY(-2px)}
+.card-preview-link{display:block}
+.card-preview{width:100%;height:180px;object-fit:cover;display:block;transition:opacity .25s}
+.card-preview-link:hover .card-preview{opacity:.85}
 .cb{height:6px;width:100%}
 .ar .cb{background:var(--accent)}.at .cb{background:var(--teal)}.an .cb{background:var(--navy)}.ap .cb{background:var(--plum)}.ao .cb{background:var(--ochre)}
 .cd{padding:24px}
@@ -86,7 +89,7 @@ footer a{color:var(--ink3);text-decoration:underline}
 
 <div class="masonry">
 
-<div class="card ar"><div class="cb"></div><div class="cd">
+<div class="card ar"><a href="https://github.com/sriyamud/diabetic-readmission-prediction/blob/main/final_project_slides.pdf" target="_blank" class="card-preview-link"><img class="card-preview" src="assets/previews/diabetic.jpg" alt="Presentation slide preview"></a><div class="cb"></div><div class="cd">
 <div class="ct2"><span>Machine Learning</span><span>Healthcare</span></div>
 <h3>Predicting Hospital Readmission for Diabetic Patients</h3>
 <div class="cl">UC Berkeley MIDS &middot; Applied Machine Learning</div>
@@ -96,7 +99,7 @@ footer a{color:var(--ink3);text-decoration:underline}
 <div class="cf"><a href="https://github.com/sriyamud/diabetic-readmission-prediction" target="_blank">Code</a></div>
 </div></div>
 
-<div class="card at"><div class="cb"></div><div class="cd">
+<div class="card at"><a href="https://github.com/sriyamud/refugee-movement-analysis/blob/main/slides/presentation_datasci205_team4.pdf" target="_blank" class="card-preview-link"><img class="card-preview" src="assets/previews/refugee.jpg" alt="Presentation slide preview"></a><div class="cb"></div><div class="cd">
 <div class="ct2"><span>Data Engineering</span><span>Graph Analytics</span></div>
 <h3>Refugee Movement Analysis with Graph &amp; NoSQL Databases</h3>
 <div class="cl">UC Berkeley MIDS &middot; Data Engineering</div>
@@ -106,7 +109,7 @@ footer a{color:var(--ink3);text-decoration:underline}
 <div class="cf"><a href="https://github.com/sriyamud/refugee-movement-analysis" target="_blank">Code</a></div>
 </div></div>
 
-<div class="card an"><div class="cb"></div><div class="cd">
+<div class="card an"><a href="https://github.com/sriyamud/spotify-popularity-regression/blob/main/DATASCI_203_-_Lab_2_Presentation.pdf" target="_blank" class="card-preview-link"><img class="card-preview" src="assets/previews/spotify.jpg" alt="Presentation slide preview"></a><div class="cb"></div><div class="cd">
 <div class="ct2"><span>Statistics</span><span>Regression</span></div>
 <h3>Behind the Charts: Musical Traits &amp; Spotify Popularity</h3>
 <div class="cl">UC Berkeley MIDS &middot; Statistical Methods</div>
@@ -116,7 +119,7 @@ footer a{color:var(--ink3);text-decoration:underline}
 <div class="cf"><a href="https://github.com/sriyamud/spotify-popularity-regression" target="_blank">Code</a></div>
 </div></div>
 
-<div class="card ap"><div class="cb"></div><div class="cd">
+<div class="card ap"><img class="card-preview" src="assets/previews/ai-financial.svg" alt="Three-arm RCT design overview"><div class="cb"></div><div class="cd">
 <div class="ct2"><span>Research Design</span><span>A/B Testing</span></div>
 <h3>Can AI-Driven Financial Tools Improve Literacy for Underbanked Communities?</h3>
 <div class="cl">UC Berkeley MIDS &middot; Research Design</div>
@@ -127,7 +130,7 @@ footer a{color:var(--ink3);text-decoration:underline}
 <div class="cf"><a href="https://github.com/sriyamud/ai-financial-literacy-research" target="_blank">Paper</a></div>
 </div></div>
 
-<div class="card ao"><div class="cb"></div><div class="cd">
+<div class="card ao"><a href="https://github.com/sriyamud/la-crime-covid-analysis/blob/main/Exploratory%20Analysis%20on%20Crime%20Records%20in%20Los%20Angeles_Slides.pdf" target="_blank" class="card-preview-link"><img class="card-preview" src="assets/previews/la-crime.jpg" alt="Presentation slide preview"></a><div class="cb"></div><div class="cd">
 <div class="ct2"><span>EDA</span><span>Public Policy</span></div>
 <h3>COVID and Crime in Los Angeles</h3>
 <div class="cl">UC Berkeley MIDS &middot; Python for Data Science</div>
@@ -137,7 +140,7 @@ footer a{color:var(--ink3);text-decoration:underline}
 <div class="cf"><a href="https://github.com/sriyamud/la-crime-covid-analysis" target="_blank">Code</a></div>
 </div></div>
 
-<div class="card ar"><div class="cb"></div><div class="cd">
+<div class="card ar"><a href="https://github.com/sriyamud/flight-delay-prediction/blob/main/presentations/MayD%28el%29ay.pptx.pdf" target="_blank" class="card-preview-link"><img class="card-preview" src="assets/previews/flight-delay.jpg" alt="Presentation slide preview"></a><div class="cb"></div><div class="cd">
 <div class="ct2"><span>ML at Scale</span><span>Time Series</span></div>
 <h3>Predicting Flight Departure Delays at Scale</h3>
 <div class="cl">UC Berkeley MIDS &middot; Machine Learning at Scale</div>
