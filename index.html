@@ -136,6 +136,17 @@ footer a{color:var(--ink3);text-decoration:underline}
 <div class="cf"><a href="https://github.com/sriyamud/la-crime-covid-analysis" target="_blank">Code</a></div>
 </div></div>
 
+<div class="card ar"><div class="cb"></div><div class="cd">
+<div class="ct2"><span>ML at Scale</span><span>Time Series</span></div>
+<h3>Predicting Flight Departure Delays at Scale</h3>
+<div class="cl">UC Berkeley MIDS &middot; Machine Learning at Scale</div>
+<p>Built a distributed binary classification pipeline on 31.7M+ flight records and 630M+ NOAA weather observations to predict US domestic departure delays &ge;15 minutes, two hours before scheduled departure.</p>
+<p style="margin-top:8px">Progressed through three modeling phases: GBT and MLP baselines with threshold tuning, then full-scale PyTorch MLP with dropout ablation and feature ablation on 2015&ndash;2021 data via Databricks.</p>
+<div class="fi"><strong>Key finding:</strong> Rolling airport congestion rate was the highest-signal engineered feature. Threshold tuning on F&#x03B2; (&beta;=2) &mdash; prioritizing recall to minimize missed delay alerts &mdash; drove the largest performance gains over default cutoffs.</div>
+<div class="tr"><strong>Tools:</strong> PySpark &middot; PyTorch &middot; scikit-learn &middot; Databricks &middot; Python</div>
+<div class="cf"><a href="https://github.com/sriyamud/flight-delay-prediction" target="_blank">Code</a></div>
+</div></div>
+
 </div>
 
 <div class="sh" id="about"><h2>About</h2></div>
