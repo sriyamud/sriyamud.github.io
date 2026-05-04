@@ -22,7 +22,7 @@ function Finder({ projects, selectedId, onSelect }) {
             <table className="finder-list">
               <thead>
                 <tr>
-                  <th></th><th>Name</th><th>Kind</th><th>Modified</th><th>Size</th>
+                  <th></th><th>Name</th><th>Modified</th>
                 </tr>
               </thead>
               <tbody>
@@ -30,9 +30,7 @@ function Finder({ projects, selectedId, onSelect }) {
                   <tr key={p.id} className={p.id === sel.id ? "sel" : ""} onClick={() => onSelect(p.id)}>
                     <td className="fl-icon">{kindIcon(p.kind)}</td>
                     <td className="fl-name">{p.name}</td>
-                    <td>{p.kind}</td>
-                    <td>{p.modified}</td>
-                    <td>{p.size}</td>
+                    <td className="fl-date">{p.modified}</td>
                   </tr>
                 ))}
               </tbody>

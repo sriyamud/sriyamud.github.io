@@ -329,7 +329,7 @@ body {
 .finder-body { flex: 1; overflow: auto; }
 
 /* finder list view */
-.finder-list { width: 100%; border-collapse: collapse; font-family: var(--mono); font-size: 12px; }
+.finder-list { width: 100%; border-collapse: collapse; font-family: var(--mono); font-size: 12px; table-layout: fixed; }
 .finder-list thead {
   position: sticky; top: 0;
   background: var(--bone);
@@ -342,8 +342,9 @@ body {
 .finder-list tbody tr:hover { background: var(--ink-soft); }
 .finder-list tbody tr.sel { background: var(--accent-soft); color: var(--accent); }
 .finder-list tbody tr.sel td { color: var(--accent); }
-.fl-icon { width: 18px; }
-.fl-name { color: var(--ink); }
+.fl-icon { width: 24px; }
+.fl-date { width: 72px; white-space: nowrap; }
+.fl-name { color: var(--ink); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
 /* finder grid view (cards) */
 .finder-grid {
@@ -371,8 +372,8 @@ body {
 .fcard-tag { font-family: var(--mono); font-size: 10px; color: var(--ink-3); }
 
 /* Project detail (right pane in finder) */
-.finder-split { display: grid; grid-template-columns: 320px 1fr; height: 100%; }
-.finder-rail { border-right: 1px solid var(--rule-soft); overflow: auto; }
+.finder-split { display: grid; grid-template-columns: 280px 1fr; height: 100%; }
+.finder-rail { border-right: 1px solid var(--rule-soft); overflow-y: auto; overflow-x: hidden; }
 .finder-detail { overflow: auto; padding: 24px 28px; }
 .finder-detail h2 { font-size: 28px; margin-bottom: 6px; }
 .finder-detail .crumb-class { font-family: var(--mono); font-size: 11px; color: var(--ink-3); margin-bottom: 18px; }

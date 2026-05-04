@@ -3,7 +3,7 @@ const { useState, useRef, useEffect, useCallback } = React;
 
 function useWindowManager(initial) {
   const [windows, setWindows] = useState(initial);
-  const [zCounter, setZCounter] = useState(100);
+  const [zCounter, setZCounter] = useState(() => Math.max(...initial.map(w => w.z)));
   const [focusedId, setFocusedId] = useState(initial[0]?.id);
 
   const focus = useCallback((id) => {
